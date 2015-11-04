@@ -830,6 +830,9 @@ ol.task-list li.done {
 }
 
 /* Overlay theming */
+#overlay { 
+  max-width: 1280px; 
+}
 .overlay #branding {
   background-color: #fff;
   padding-top: 15px;
@@ -840,7 +843,7 @@ ol.task-list li.done {
   display: none;
 }
 .overlay #page {
-  margin: 0;
+  margin: 0 auto;
   padding: 0 20px;
 }
 .overlay #branding div.breadcrumb {
@@ -867,6 +870,10 @@ ol.task-list li.done {
 }
 h1#overlay-title {
   font-weight: normal;
+}
+
+.overlay-modal-background {
+  background: rgba(1,1,1,.9);
 }
 
 /* Shortcut theming */
