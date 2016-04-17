@@ -1,0 +1,7 @@
+/* Everybody uses views, right? */
+#views-display-top .ctools-dropbutton {
+  position: absolute;
+  left: 0;
+  margin-left: 1em;
+  width: 170px;
+}

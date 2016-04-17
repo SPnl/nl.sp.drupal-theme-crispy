@@ -1,32 +1,32 @@
 html body.admin-menu {
-	margin-top: 48px !important;
+  margin-top: 36px !important;
 }
 
 img {
-	max-width: 100%;
-	height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 :focus {
-	outline-color: transparent;
-	outline-style: none;
+  outline-color: transparent;
+  outline-style: none;
 }
 
 /*= Structure
 --------------------------------------------------------------------------------*/
 #page {
-	padding: .72em 4em; 
-	margin: 0 auto;
-	max-width: 1280px;
-	background: #fff;
-	position: relative;
-	color: #333;
+  padding: .72em 4em; 
+  margin: 0 auto;
+  max-width: 1280px;
+  background: #fff;
+  position: relative;
+  color: #333;
 }
 
 #branding { 
-	background: none; 
-	padding: .1em 3.2em; 
-	border-bottom: 2px solid #eee; 
+  background: none; 
+  padding: .1em 3.2em; 
+  border-bottom: 2px solid #eee; 
 } 
 
 #branding a, 
@@ -35,17 +35,17 @@ img {
 #page th a:visited { color: #333; }
 
 #branding h1.page-title { 
-	color: #a1a1a1; 
-	color: #888; 
-	font-weight: bold; 
-	font-size: 1.4em; 
+  color: #a1a1a1; 
+  color: #888; 
+  font-weight: bold; 
+  font-size: 1.4em; 
 }
 
 #branding h1.page-title em { font-style: normal; } 
 
 #page .tabs.secondary {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #page .tabs.secondary a {color: #222; font-size: 12px; padding: 5px 15px; margin: 0;}
@@ -69,25 +69,25 @@ tr.odd {
 }
 
 table {
-	border: none;
+  border: none;
 }
 
 table th {
-	background: #f1f1f1;
-	border: none;
-	border-bottom: 1px solid #ddd;
-	font-weight: bold;
-	color: #aaa;
-	text-transform: none;
+  background: #f1f1f1;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  font-weight: bold;
+  color: #aaa;
+  text-transform: none;
 }
 
 table th.active {
-	background: #ddd;
-	color: #fff;
+  background: #ddd;
+  color: #fff;
 }
 
 table th a {
-	color: #888 !important;
+  color: #888 !important;
 }
 
 table th.active a {
@@ -96,21 +96,34 @@ table th.active a {
 
 table tr.odd,
 table tr.even {
-	border: none;
-	border-bottom: 1px solid #ddd;
+  border: none;
+  border-bottom: 1px solid #ddd;
 }
 table td:last-child {
-	border: none;
+  border: none;
 }
 
 .page-admin table .form-type-checkbox {
-	text-align: center;
+  text-align: center;
 }
 
 /*= User profile
 --------------------------------------------------------------------------------*/
-.page-user-edit #edit-profile-main-field-afbeelding { max-width: 250px; float: left; border: 1px solid #ddd; padding: 8px; margin: 14px 16px 0 0; background: #fafafa; }
-.page-user-edit #edit-profile-main-field-afbeelding .image-preview {width: 128px; height: 128px; overflow: hidden; padding: 0; margin: 0 0 8px 0;}
+.page-user-edit #edit-profile-main-field-afbeelding { 
+  max-width: 250px; 
+  float: left; 
+  border: 1px solid #ddd; 
+  padding: 8px; 
+  margin: 14px 16px 0 0; 
+  background: #fafafa; 
+}
+.page-user-edit #edit-profile-main-field-afbeelding .image-preview {
+  width: 128px; 
+  height: 128px; 
+  overflow: hidden; 
+  padding: 0; 
+  margin: 0 0 8px 0;
+}
 .page-user-edit #edit-profile-main-field-afbeelding .image-preview img { margin: 0;}
 .page-user-edit #edit-profile-main-field-afbeelding label {display: none;}
 .page-user-edit #edit-profile-main-field-afbeelding .form-submit {width: 100%; margin: 5px 0 0 0 ;}
@@ -126,26 +139,28 @@ table td:last-child {
 
 .page-user-edit .form-text {font-size: 13px;  margin: 0; }
 .page-user-edit .field-name-field-voornaam label,
-#content label {font-size: 11px; color: #555; padding: 5px 0;} 
+
 
 
 /*= Form elements
 --------------------------------------------------------------------------------*/
+input.form-text {padding: 4px;}
+input.form-text:focus, input.form-text:hover{border: 1px solid #d88;  }
 #content .form-submit,
 #content .button { border-radius: 0; border: 1px solid #aaa; padding: .4em .72em; margin: 2px; background: #aaa; color: #fff; }
 #content .form-submit:hover,
 #content .button:hover  { border: 1px solid #000; background: #000; color: #fff;}
-input.form-text {padding: 4px;}
-input.form-text:focus, input.form-text:hover{border: 1px solid #d88;  }
 #content .description {opacity: .8;}
 #content .form-item:hover .description {opacity: 1;}
 #content textarea {max-width: 720px;}
 #content .grippie {display: none;}
 #content .form-button-disabled { background: #fafafa; border: 1px solid #ddd; }
+#content label {font-size: 11px; color: #555; padding: 5px 0;} 
 
 .page-node-add #edit-title,
-.page-node-edit #edit-title {font-size: 1.8em; font-weight: bold; width: 720px; padding: .4em; }
+.page-node-edit #edit-title {font-size: 2.1em; font-weight: bold; width: 720px; padding: .4em; }
 
+/* Ckeditor */
 #cke_edit-body-und-0-value {border: none; padding: 0;}
 #edit-body-und-0-format {border: none;}
 .node-form .form-item {padding: 0; margin: 0;}
@@ -153,34 +168,35 @@ input.form-text:focus, input.form-text:hover{border: 1px solid #d88;  }
 .tabs-secondary {font-size: 1.2em;}
 
 .form-item .form-text,
-.form-item textarea { border-radius: 0; padding: .5em; border: 1px solid #ddd; background: #fafafa; }
+.form-item textarea { 
+  border-radius: 0; 
+  padding: .5em; 
+  border: 1px solid #ddd; 
+  background: #fafafa; 
+  box-shadow: inset 3px 3px 0 rgba(2,2,2,.02); 
+}
 .form-item input[disabled="disabled"] { background: #eee; }
 
 .vertical-tabs fieldset {
-	background: none;
-	box-shadow: none;
+  background: none;
+  box-shadow: none;
 }
 
 /*= Password strength
 --------------------------------------------------------------------------------*/
 
-.password-indicator {height: 10px; border-radius: 2px; overflow: hidden; background: #ddd;}
-.page-user-edit #edit-contact {display: none;}
-.exposed-filters .form-item {float: left;}
-
-.dev-query {
-	text-align: center;
-	position: fixed;
-	bottom: 0;
-	width: 100vw;
-	padding: .4em 0;
-	background: rgba(222,222,222,.7);
-	font-family: monospace;
-	font-size: 10px;
+.password-indicator {
+  height: 10px; 
+  border-radius: 2px; 
+  overflow: hidden; 
+  background: #ddd;
 }
 
+.page-user-edit #edit-contact { display: none; }
+.exposed-filters .form-item { float: left; }
+
 #admin-menu {
-	box-shadow: none;
+  box-shadow: none;
 }
 
 
@@ -192,10 +208,10 @@ input.form-text:focus, input.form-text:hover{border: 1px solid #d88;  }
 #body-add-more-wrapper .tips { display: none; }
 
 .node-form .media-item {
-	background: none;
-	box-shadow: none;
-	padding: 0;
-	border: none;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  border: none;
 }
 
 .node-form .media-thumbnail .media-filename {display: none;}
@@ -208,50 +224,37 @@ input.form-text:focus, input.form-text:hover{border: 1px solid #d88;  }
 .page-admin-content .action-links {margin: 0; padding 0;}
 
 .page-admin-config .admin-panel {
-	margin: 0 0 2.1em 0;
-	padding: 9px;
-	background: none;
-	border: none;
-	border-bottom: 1px solid #ddd;
+  margin: 0 0 2.1em 0;
+  padding: 9px;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #ddd;
 }
 
 ul.admin-list li:first-of-type {
-	border-top: none;
+  border-top: none;
 }
 
 /* ROOD content tweaks */
 
 .field-name-field-ref-rood-post-type label{
-	display: none;
+  display: none;
 }
 
 .content select {
-	border: none;
-	background: #f1f1f1;
-	font-size: 1.14em;
-	padding: .144em;
-	border: 1px solid #ddd;
+  border: none;
+  background: #f1f1f1;
+  font-size: 1.14em;
+  padding: .144em;
+  border: 1px solid #ddd;
 }
 
 .field-multiple-table th {
-	background: #fff;
+  background: #fff;
 }
-
 
 .filterable-option .form-item {
-	padding: .4em;
+  padding: .4em;
 }
 
-/* Everybody uses views, right? */
-#views-display-top .ctools-dropbutton {
-	position: absolute;
-	left: 0;
-	margin-left: 1em;
-	width: 170px;
 
-}
-
-#yoast-wrapper {
- border: none;
- border-right: none;
-}
