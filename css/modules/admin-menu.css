@@ -3,14 +3,13 @@ html body.admin-menu {
 }
 
 #admin-menu-wrapper {
-  font-size: 1.14em;
   padding: 0;
 }
 
 #admin-menu {
-	background: #222;
-	padding: 0;
-    box-shadow: none;
+  background: #222;
+  padding: 0;
+  box-shadow: none;
 }
 #admin-menu .dropdown .admin-menu-toolbar-category > a,
 #admin-menu .dropdown .admin-menu-action > a {
