@@ -1,0 +1,10 @@
+.dev-query {
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	padding: .4em 0;
+	background: rgba(222,222,222,.7);
+	font-family: monospace;
+	font-size: 10px;
+}

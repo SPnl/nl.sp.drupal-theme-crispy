@@ -1,0 +1,86 @@
+
+/**
+ * Tabs
+ */
+ .tabs-wrapper {
+   overflow: hidden;
+   margin: 0 auto;
+   max-width: 1280px;
+   padding: 0;
+ }
+
+ul.primary {
+  float: right; /* LTR */
+  margin-top: 1.4em;
+  padding-right: .4em;
+}
+
+ul.primary li {
+  float: left; /* LTR */
+  list-style: none;
+  margin-left: .4em;
+}
+ul.primary li a:link,
+ul.primary li a.active,
+ul.primary li a:active,
+ul.primary li a:visited,
+ul.primary li a:hover,
+ul.primary li.active a {
+  display: inline-block;
+  padding: .72em 1.4em;
+  color: #333;
+}
+
+ul.primary li.active a,
+ul.primary li.active a.active,
+ul.primary li.active a:active,
+ul.primary li.active a:visited {
+ color: #aaa;
+ background:  #fff;
+}
+
+ul.primary li a:hover {
+  color: #fff;
+  background: #000;
+}
+ul.primary li.active a:hover {
+  color: #000;
+}
+
+.tabs-secondary {
+  clear: both;
+  padding: .3em 0;
+}
+
+ul.secondary {
+  float: right; /* LTR */
+  background-color: #fff;
+}
+ul.secondary li {
+  float: none; /* LTR */
+  font-size: .8em;
+}
+ul.secondary li a {
+  display: inline-block;
+  color: #0074BD;
+  border-bottom: 2px solid #0074BD;
+}
+ul.secondary li a,
+ul.secondary li a:hover,
+ul.secondary li.active a,
+ul.secondary li.active a.active {
+ padding: .14em .72em;
+
+}
+ul.secondary li a:hover {
+  border-color: #000;
+  color: #000;
+}
+ul.secondary li.active a,
+ul.secondary li.active a.active {
+  color: #aaa;
+  border-bottom: 2px solid #ddd;
+}
+
+.form-item-language { display: none; }
+.attention { background: #ffa; border: 1px solid #fa0; padding: 6px; display: block; margin: 6px 0; color: #555;  width: 350px;}

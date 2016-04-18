@@ -1,107 +1,8 @@
-html body.admin-menu {
-  margin-top: 36px !important;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-:focus {
-  outline-color: transparent;
-  outline-style: none;
-}
-
 /*= Structure
 --------------------------------------------------------------------------------*/
-#page {
-  padding: .72em 4em; 
-  margin: 0 auto;
-  max-width: 1280px;
-  background: #fff;
-  position: relative;
-  color: #333;
-}
 
-#branding { 
-  background: none; 
-  padding: .1em 3.2em; 
-  border-bottom: 2px solid #eee; 
-} 
-
-#branding a, 
-#branding a:visited, 
 #page th a, 
 #page th a:visited { color: #333; }
-
-#branding h1.page-title { 
-  color: #a1a1a1; 
-  color: #888; 
-  font-weight: bold; 
-  font-size: 1.4em; 
-}
-
-#branding h1.page-title em { font-style: normal; } 
-
-#page .tabs.secondary {
-  margin: 0;
-  padding: 0;
-}
-
-#page .tabs.secondary a {color: #222; font-size: 12px; padding: 5px 15px; margin: 0;}
-#page .tabs.secondary li {margin: 0; padding: 0;}
-#page .tabs.secondary a:hover {background: #fff; color: #000; }
-#page .tabs .active a {color: #fff; background: #000;}
-
-.form-item-language { display: none; }
-.attention { background: #ffa; border: 1px solid #fa0; padding: 6px; display: block; margin: 6px 0; color: #555;  width: 350px;}
-
-fieldset { border: none; border-bottom: 1px solid #ddd; }
-fieldset .fieldset-title { text-transform: none; }
-
-tr.even,
-tr.odd {
-  border-bottom: 1px solid #ddd;
-  background: #fff;
-}
-tr.odd {
-  background: #fafafa;
-}
-
-table {
-  border: none;
-}
-
-table th {
-  background: #f1f1f1;
-  border: none;
-  border-bottom: 1px solid #ddd;
-  font-weight: bold;
-  color: #aaa;
-  text-transform: none;
-}
-
-table th.active {
-  background: #ddd;
-  color: #fff;
-}
-
-table th a {
-  color: #888 !important;
-}
-
-table th.active a {
-  color: #fff;
-}
-
-table tr.odd,
-table tr.even {
-  border: none;
-  border-bottom: 1px solid #ddd;
-}
-table td:last-child {
-  border: none;
-}
 
 .page-admin table .form-type-checkbox {
   text-align: center;
@@ -142,49 +43,8 @@ table td:last-child {
 
 
 
-/*= Form elements
---------------------------------------------------------------------------------*/
-input.form-text {padding: 4px;}
-input.form-text:focus, input.form-text:hover{border: 1px solid #d88;  }
-#content .form-submit,
-#content .button { border-radius: 0; border: 1px solid #aaa; padding: .4em .72em; margin: 2px; background: #aaa; color: #fff; }
-#content .form-submit:hover,
-#content .button:hover  { border: 1px solid #000; background: #000; color: #fff;}
-#content .description {opacity: .8;}
-#content .form-item:hover .description {opacity: 1;}
-#content textarea {max-width: 720px;}
-#content .grippie {display: none;}
-#content .form-button-disabled { background: #fafafa; border: 1px solid #ddd; }
-#content label {font-size: 11px; color: #555; padding: 5px 0;} 
-
-.page-node-add #edit-title,
-.page-node-edit #edit-title {font-size: 2.1em; font-weight: bold; width: 720px; padding: .4em; }
-
-/* Ckeditor */
-#cke_edit-body-und-0-value {border: none; padding: 0;}
-#edit-body-und-0-format {border: none;}
-.node-form .form-item {padding: 0; margin: 0;}
-
-.tabs-secondary {font-size: 1.2em;}
-
-.form-item .form-text,
-.form-item textarea { 
-  border-radius: 0; 
-  padding: .5em; 
-  border: 1px solid #ddd; 
-  background: #fafafa; 
-  box-shadow: inset 3px 3px 0 rgba(2,2,2,.02); 
-}
-.form-item input[disabled="disabled"] { background: #eee; }
-
-.vertical-tabs fieldset {
-  background: none;
-  box-shadow: none;
-}
-
 /*= Password strength
 --------------------------------------------------------------------------------*/
-
 .password-indicator {
   height: 10px; 
   border-radius: 2px; 
@@ -193,17 +53,12 @@ input.form-text:focus, input.form-text:hover{border: 1px solid #d88;  }
 }
 
 .page-user-edit #edit-contact { display: none; }
+
 .exposed-filters .form-item { float: left; }
 
-#admin-menu {
-  box-shadow: none;
-}
-
-
 /* Node edit form */
-#body-add-more-wrapper fieldset{  background: none; border-bottom: 1px solid #ddd; box-shadow: none;  }
+#body-add-more-wrapper fieldset { background: none; border-bottom: 1px solid #ddd; box-shadow: none; }
 #body-add-more-wrapper .ckeditor_links { padding: .4em; }
-
 #body-add-more-wrapper .filter-help,
 #body-add-more-wrapper .tips { display: none; }
 
@@ -219,35 +74,21 @@ input.form-text:focus, input.form-text:hover{border: 1px solid #d88;  }
 
 /* Local tweaks */
 
-.page-admin-content #edit-filters {width: 50%; float: left; height: 60px; border: none;}
-.page-admin-content #edit-options {width: 50%; float: left; height: 60px; border: none;}
-.page-admin-content .action-links {margin: 0; padding 0;}
-
-.page-admin-config .admin-panel {
-  margin: 0 0 2.1em 0;
-  padding: 9px;
-  background: none;
-  border: none;
-  border-bottom: 1px solid #ddd;
-}
+.page-admin-content #edit-filters {width: 50%; float: left; border: none;}
+.page-admin-content #edit-options {width: 50%; float: left; border: none;}
 
 ul.admin-list li:first-of-type {
   border-top: none;
-}
-
-/* ROOD content tweaks */
-
-.field-name-field-ref-rood-post-type label{
-  display: none;
 }
 
 .content select {
   border: none;
   background: #f1f1f1;
   font-size: 1.14em;
-  padding: .144em;
+  padding: .32em;
   border: 1px solid #ddd;
 }
+
 
 .field-multiple-table th {
   background: #fff;
@@ -257,4 +98,20 @@ ul.admin-list li:first-of-type {
   padding: .4em;
 }
 
+/* Ckeditor */
+#cke_edit-body-und-0-value {border: none; padding: 0;}
+#edit-body-und-0-format {border: none;}
+.node-form .form-item {padding: 0; margin: 0;}
 
+.system-status-report tr {
+  border: .4em solid #fff;
+}
+
+.theme-default .screenshot {
+  border: 1px solid #fff;
+}
+
+#permissions td.module {
+  font-weight: bold;
+  font-size: 1.14em;
+}

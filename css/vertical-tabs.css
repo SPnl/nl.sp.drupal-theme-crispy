@@ -3,7 +3,7 @@
  * Override of misc/vertical-tabs.css.
  */
 div.vertical-tabs {
-  background: #fff url(images/fc.png) repeat-y 0 0; /* LTR */
+  background: #fff url(../images/fc.png) repeat-y 0 0; /* LTR */
   border: 1px solid #ccc;
   margin: 10px 0;
   position: relative;
@@ -30,7 +30,7 @@ div.vertical-tabs ul li.vertical-tab-button {
 div.vertical-tabs ul li.vertical-tab-button a {
   border-top: 1px solid #ccc;
   display: block;
-  padding: 10px;
+  padding: 1.14em;
 }
 div.vertical-tabs ul li.first a {
   border-top: 0;
@@ -93,4 +93,9 @@ fieldset.vertical-tabs-pane fieldset legend {
 * html .vertical-tabs .form-type-textfield,
 * html .vertical-tabs .form-textarea-wrapper {
   width: 95%; /* IE6 */
+}
+
+.vertical-tabs fieldset {
+  background: none;
+  box-shadow: none;
 }

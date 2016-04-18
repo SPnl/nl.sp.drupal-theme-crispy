@@ -5,3 +5,13 @@
   margin-left: 1em;
   width: 170px;
 }
+
+.views-ui-display-tab-bucket .form-submit  {
+   padding: 0;
+   background: #fff;
+}
+
+.views-exposed-widget {
+  float: left;
+  padding: 1em;
+}

@@ -1,9 +1,15 @@
 /**
  * Generic HTML elements.
  */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
   color: #333;
-  background: #fff;
+  background: #F7F6F4;
   font: normal 81.3%/1.4em "Lucida Grande", "Lucida Sans Unicode", sans-serif;
 }
 a {
@@ -148,4 +154,118 @@ kbd {
 pre {
   margin: 0.5em 0;
   white-space: pre-wrap;
+}
+
+/**
+ * Tables 
+ */
+table {
+  width: 100%;
+  margin: 0 0 10px;
+}
+table th {
+  background: #eee;
+  border: 0;
+  color: #888;
+  vertical-align: middle;
+  padding: .4em;
+}
+table th.active {
+  background: #ddd;
+  color: #fff;
+}
+table th a {
+  color: #888 !important;
+}
+table th.active a {
+  color: #fff;
+}
+
+table tr.odd,
+table tr.even {
+  border: none;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+}
+table tr:hover {
+  background: #fafafa;
+}
+table tr.drag {
+  background: #fe7;
+}
+table tr.drag-previous {
+  background: #ffb;
+}
+
+table td {
+  vertical-align: middle;
+  padding: .72em;
+  color: #000;
+  border: 0;
+}
+table td:last-child {
+  border: none;
+}
+
+/**
+ * Force browsers to calculate the width of a 'select all' TH element.
+ */
+
+table th.select-all {
+  width: 1px;
+}
+table th.active {
+  background: #fff;
+}
+table th a {
+  display: block;
+  position: relative;
+}
+table th.active a {
+  padding: 0 25px 0 0; /* LTR */
+}
+table th.active img {
+  position: absolute;
+  top: 3px;
+  right: 3px; /* LTR */
+}
+table td.active {
+  background: #e9e9dd;
+}
+table tr.odd td.active {
+  background: #f3f4ee;
+}
+table tr.selected td.active,
+table tr.selected td {
+  background: #ffc;
+  border-color: #eeb;
+}
+table.system-status-report tr {
+  border-bottom: 1px solid #ccc;
+}
+table.system-status-report tr.ok {
+  color: #255b1e;
+  background-color: #e5ffe2;
+}
+table.system-status-report tr.info {
+  color: #040f37;
+  background-color: #bdf;
+}
+table.system-status-report tr.warning {
+  color: #840;
+  background-color: #fffce5;
+}
+table.system-status-report tr.error {
+  color: #8c2e0b;
+  background-color: #fef5f1;
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+th .throbber {
+  display: none;
 }

@@ -1,13 +1,17 @@
 name = Crispy
 description = Crispy clean modification of the core Seven theme
-version = 0.2
+version = 0.3	
 core = 7.x
 
 stylesheets[screen][] = css/reset.css
 stylesheets[screen][] = css/base-html.css
 stylesheets[screen][] = css/style.css
+stylesheets[screen][] = css/forms.css
+stylesheets[screen][] = css/tabs.css
+stylesheets[screen][] = css/vertical-tabs.css
 stylesheets[screen][] = css/crispy.css
 stylesheets[screen][] = css/modules/admin-menu.css
+stylesheets[screen][] = css/modules/devel.css
 stylesheets[screen][] = css/modules/views.css
 
 settings[shortcut_module_link] = 1

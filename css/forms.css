@@ -1,0 +1,214 @@
+/*= Form elements
+--------------------------------------------------------------------------------*/
+:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+/* Fieldsets */
+fieldset {
+  border: 1px solid #ccc;
+  padding: 2.5em 0 0 0; /* LTR */
+  position: relative;
+  margin: 1em 0;
+}
+fieldset .fieldset-legend {
+  margin-top: 0.5em;
+  padding-left: 15px; /* LTR */
+  position: absolute;
+  text-transform: uppercase;
+}
+fieldset .fieldset-wrapper {
+  padding: 0 13px 13px 15px; /* LTR */
+}
+fieldset.collapsed {
+  background-color: transparent;
+}
+html.js fieldset.collapsed {
+  border-width: 1px;
+  height: auto;
+}
+fieldset fieldset {
+  background-color: #fff;
+}
+fieldset fieldset fieldset {
+  background-color: #f8f8f8;
+}
+fieldset { border: none; border-bottom: 1px solid #ddd; }
+fieldset .fieldset-title { text-transform: none; }
+fieldset.form-wrapper {
+  overflow: hidden;
+}
+
+/* Styled elements */
+
+#content .form-submit,
+#content .button { border: 1px solid #0074BD; padding: .72em 1.14em; margin-right: .6em; background: #0074BD; color: #fff; }
+#content .form-submit:hover,
+#content .button:hover  { border: 1px solid #000; background: #000; color: #fff;}
+#content .description {opacity: .8;}
+#content .form-item:hover .description {opacity: 1;}
+#content textarea {max-width: 720px;}
+#content .grippie {display: none;}
+#content .form-button-disabled { background: #fafafa; border: 1px solid #ddd; }
+
+/* Large node titles on edit page*/
+.page-node-add #edit-title,
+.page-node-edit #edit-title {font-size: 2.1em; font-weight: bold; width: 720px; padding: .4em; }
+
+/* Ckeditor */
+#cke_edit-body-und-0-value {border: none; padding: 0;}
+#edit-body-und-0-format {border: none;}
+.node-form .form-item {padding: 0; margin: 0;}
+
+.tabs-secondary {font-size: 1.2em;}
+
+.form-item .form-text,
+.form-item textarea { 
+  border-radius: 0; 
+  padding: .5em; 
+  border: 1px solid #ddd; 
+  background: #fafafa; 
+  box-shadow: inset 3px 3px 0 rgba(2,2,2,.02); 
+}
+.form-item input[disabled="disabled"] { background: #eee; }
+
+.form-item .form-text,
+.form-item textarea { 
+  border-radius: 0; 
+  padding: .5em; 
+  border: 1px solid #ddd; 
+  background: #fafafa; 
+  box-shadow: inset 3px 3px 0 rgba(2,2,2,.02); 
+}
+.form-item input[disabled="disabled"] { background: #eee; }
+
+/**
+ * Form elements.
+ */
+.form-item {
+  padding: 9px 0;
+  margin: 0 0 10px;
+}
+.filter-wrapper .form-item,
+div.teaser-checkbox .form-item,
+.form-item .form-item {
+  padding: 5px 0;
+  margin: 0;
+  border: 0;
+}
+.form-type-checkbox {
+  padding: 0;
+}
+.text-format-wrapper .form-item {
+  padding-bottom: 0;
+}
+.form-item label {
+  margin: 0;
+  padding: .72em 0;
+}
+.form-item label.option {
+  text-transform: none;
+}
+.form-item label.option input {
+  vertical-align: middle;
+}
+.form-disabled input.form-autocomplete,
+.form-disabled input.form-text,
+.form-disabled input.form-file,
+.form-disabled textarea.form-textarea,
+.form-disabled select.form-select {
+  background-color: #eee;
+  color: #777;
+}
+.form-disabled label {
+  color: #aaa;
+}
+
+/* Filter */
+.filter-wrapper {
+  border-top: 0;
+  padding: 10px 2px;
+}
+.filter-wrapper .fieldset-wrapper {
+  padding: 0 6px;
+}
+.filter-wrapper .form-item,
+.filter-wrapper .filter-guidelines,
+.filter-wrapper .filter-help {
+  font-size: 0.923em;
+  padding: 2px 0 0 0; /* LTR */
+}
+ul.tips,
+div.description,
+.form-item div.description {
+  font-size: 1em;
+  color: #666;
+}
+ul.tips li {
+  margin: 0.25em 0 0.25em 1.5em; /* LTR */
+}
+body div.form-type-radio div.description,
+body div.form-type-checkbox div.description {
+  margin-left: 1.5em; /* LTR */
+}
+input.form-submit,
+a.button {
+  cursor: pointer;
+  padding: 4px 17px;
+  margin-bottom: 1em;
+  margin-right: 1em; /* LTR */
+  color: #5a5a5a;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.077em;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #b4b4b4;
+  border-left-color: #d2d2d2;
+  border-right-color: #d2d2d2;
+  background: url(../images/buttons.png) 0 0 repeat-x;
+}
+a.button:link,
+a.button:visited,
+a.button:hover,
+a.button:active {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+input.form-submit:active {
+  background: #666;
+  color: #fff;
+  border-color: #555;
+  text-shadow: #222 0 -1px 0;
+}
+input.form-button-disabled,
+input.form-button-disabled:active {
+  background: #eee none;
+  border-color: #eee;
+  text-shadow: none;
+  color: #999;
+}
+input.form-autocomplete,
+input.form-text,
+input.form-file,
+textarea.form-textarea,
+select.form-select {
+  padding: .4em;
+  border: 1px solid #ccc;
+  background: #fafafa;
+}
+input.form-text:focus,
+input.form-file:focus,
+textarea.form-textarea:focus,
+select.form-select:focus {
+  border-color: #ace;
+}
+
+/**
+ * Managed file element styles.
+ */
+.form-managed-file .form-file,
+.form-managed-file .form-submit {
+  margin-right: .4em;
+}

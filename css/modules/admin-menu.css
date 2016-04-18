@@ -1,30 +1,31 @@
+html body.admin-menu {
+  margin-top: 30px !important;
+}
+
+#admin-menu-wrapper {
+  font-size: 1.14em;
+  padding: 0;
+}
+
 #admin-menu {
 	background: #222;
 	padding: 0;
+    box-shadow: none;
 }
-
 #admin-menu .dropdown .admin-menu-toolbar-category > a,
 #admin-menu .dropdown .admin-menu-action > a {
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
 }
-
 #admin-menu li.admin-menu-account > a {
-  background: #911;
+  background: #0074BD;
 }
-
-#admin-menu-wrapper {
-  font-size: .9em;
-  padding: 0;
-}
-
 #admin-menu > div > .dropdown > li > a {
   border-right: 0;
   padding: .72em;
   margin: 0;
 }
-
 #admin-menu .dropdown .admin-menu-toolbar-category > a.active-trail {
   text-shadow: none;
   color: #fff;
