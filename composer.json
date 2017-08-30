@@ -1,0 +1,15 @@
+{
+  "name": "spnl/nl.sp.drupal-theme-crispy",
+  "description": "A crispy clean theme for Drupal admins. Originally based on Seven.",
+  "type": "drupal-theme",
+  "authors": [
+    {
+      "name": "Stijn Dekker",
+      "email": "sdekker@sp.nl"
+    },
+    {
+      "name": "Kevin Levie",
+      "email": "kevin@levity.nl"
+    }
+  ]
+}
