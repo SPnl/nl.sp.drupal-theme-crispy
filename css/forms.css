@@ -212,3 +212,11 @@ select.form-select:focus {
 .form-managed-file .form-submit {
   margin-right: .4em;
 }
+
+/**
+ * Managed file element styles.
+ */
+a.tabledrag-handle .handle {
+    height: 22px;
+    width: 18px;
+}
